@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int i,n,m,j;
+    scanf("%d%d",&n,&m);
+    for(i=1;i<=n;i++)
+    {
+        int count=1;
+        for(j=1;j<=m;j++)
+        {
+            if( j>=n+2-i && j<=i+m-5)
+            printf("  ");
+            else
+            printf("* ");
+        
+        }
+        printf("\n");
+    }
+    
+}

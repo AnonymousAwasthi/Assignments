@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    char c;
+    scanf("%c",&c);
+    if(c>='a'&&c<="z")
+    printf("character is an lower case alphabet");
+    else if(c>='A'&&c<='Z')
+    printf("character is an upper case alphabet");
+    else if(c>='0'&&c<='9')
+    printf("character is a digit");
+    else
+    printf("entered character is a special character");
+}

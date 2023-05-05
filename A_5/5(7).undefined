@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int x,y;
+    printf("enter two number\n");
+    scanf("%d%d",&x,&y);
+    if(x>y)
+    printf("greater between %d and %d id %d",x,y,x);
+    else
+    printf("greater between %d and %d is %d",x,y,y);
+    return 0;
+}

@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+	int check_number(int n)
+	{
+	    if(n%2)
+	    return(0);
+	    else
+	    return(1);
+	}
+	int f;
+	f=check_number(502);
+    printf("%d",f);	
+	return 0;
+}

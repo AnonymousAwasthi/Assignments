@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+	char c;
+	scanf("%c",&c);
+	switch(c)
+	{
+	    case 'a' ... 'z':
+	        printf("Lower Case Alphabate\n");
+	        break;
+	    case 'A' ... 'Z':
+	        printf("Upper Case Alphabate\n");
+	        break;
+	    default :
+	        printf("other special character\n");
+	}
+	return 0;
+}

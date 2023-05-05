@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    char c;
+    scanf("%c",&c);
+    if(c>96&&c<123)
+    printf("letter is a lower case letter");
+    else
+    printf("letter is an Upper Case letter");
+}

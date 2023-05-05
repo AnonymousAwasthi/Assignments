@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(){
+    int x;
+    double y;
+    scanf("%lf",&y);
+    x=sizeof(y);
+    printf("%d",x);
+    
+    return 0; 
+}

@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+	void print_natural_number(int n)
+	{
+	    for(int i=1;i<=n;i++)
+	        printf("%d ",2*i-1);
+	}
+	print_natural_number(2);
+	return 0;
+}

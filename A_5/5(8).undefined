@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("enter quadratic equation\n");
+    scanf("%dx^2+%dx+%d=0",&a,&b,&c);
+    if(b*b-4*a*c>0)
+    printf("roots are real and distinct");
+    if(b*b-4*a*c<0)
+    printf("roots are imaginary");
+    if(b*b-4*a*c==0)
+    printf("roots are real and equal");
+    
+    return 0;
+}

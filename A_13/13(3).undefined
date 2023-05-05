@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int x;
+    scanf("%d",&x);
+    switch(x)
+    {
+        case 1:
+        printf("Good Morning,it\'s monday");
+        break;
+        case 2:
+        printf("Good Morning,it\'s Tuesday");
+        break;
+        case 3:
+        printf("Good Morning,it\'s Wednesday");
+        break;
+        case 4:
+        printf("Good Morning,it\'s Thursday");
+        break;
+        case 5:
+        printf("Good Morning,it\'s Friday");
+        break;
+        case 6:
+        printf("Good Morning,it\'s Saturday");
+        break;
+        case 7:
+        printf("Good Morning,it\'s Sunday");
+        break;
+        default:
+        printf("Invalid day number");
+    }
+	return 0;
+}

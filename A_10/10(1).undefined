@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int a=0,b=1,count,s,N;
+    scanf("%d",&N);
+    if(N==1)
+    printf("%d",a);
+    if(N==2)
+    printf("%d",b);
+    for(count=3;count<=N;count++)
+    {
+        // if(count==1)
+        //       printf("%d ",a);
+        // if(count==2)
+        //       printf("%d ",b);
+        if(count>=3)
+            {
+                s=a+b;
+                //printf("%d ",s);
+                a=b;
+                b=s;
+            }
+    }
+    if(N>2)
+    printf("%d",s);
+}

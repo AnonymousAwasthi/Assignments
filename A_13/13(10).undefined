@@ -1,0 +1,69 @@
+#include <stdio.h>
+
+int main() {
+    while(1)
+    {
+    	printf("1. Calculate LCM of two number\n");
+    	printf("2. Calculate sum of the digits of a number\n");
+    	printf("3. Volume of a cuboid\n");
+    	printf("4. Check whether a given number is prime or not\n");
+    	printf("5. Exit\n");
+    	int choice;
+    	int i,a,b,LCM;
+    	int x,y,sum=0;
+    	int l,w,h,Vol;
+    	int j,N,count;
+    	scanf("%d",&choice);
+    	switch(choice)
+    	{
+    	    case 1:
+    	        
+                    scanf("%d%d",&a,&b);
+                	for(i=a>b?a:b;i<=a*b;)
+                	{
+                	    if(i%a==0&&i%b==0)
+                	    {
+                	        LCM=i;
+                	        break;
+                	    }
+                	    else
+                	    i++;
+                	}
+                	printf("%d\n",LCM);
+                	break;
+            case 2:
+            scanf("%d",&x);
+                while(x)
+                {
+                    y=x%10;
+                    x=x/10;
+                    sum=sum+y;
+                }
+                printf("%d\n",sum);
+                break;
+            case 3:
+                
+                scanf("%d%d%d",&l,&w,&h);
+                Vol=l*w*h;
+                printf("%d",Vol);
+                break;
+            case 4:
+                count=0;
+                for(j=1;j<=N;j++)
+                {
+                    if(N%j==0);
+                    count++;
+                }
+                if(count==2)
+                printf("Number is prime\n");
+                else
+                printf("Number is not prime\n");
+                break;
+            case 5:
+                break;
+    	}
+    	if(choice==5)
+    	break;
+    }	
+	return 0;
+}

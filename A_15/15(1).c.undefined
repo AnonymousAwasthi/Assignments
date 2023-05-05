@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+	int LCM(int x,int y)
+	{
+	    for(int i=x>y?x:y;i<=x*y;i++)
+	        if(i%x==0&&i%y==0)
+	        return i;
+	}
+	int x,y;
+	scanf("%d%d",&x,&y);
+	int k=LCM(x,y);
+	printf("%d",x);
+	return 0;
+}

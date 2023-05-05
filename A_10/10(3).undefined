@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+    int a=0,b=1,count,s,N,x;
+    
+    scanf("%d%d",&N,&x);
+    if(N==1)
+    printf("%d",a);
+    if(N==2)
+    printf("%d",b);
+    for(count=1;count<=N;count++)
+    {
+        if(count==1)
+              printf("%d ",a);
+        if(count==2)
+              printf("%d ",b);
+        if(count>=3)
+            {
+                s=a+b;
+                printf("%d ",s);
+                a=b;
+                b=s;
+                if(s==x)
+                {
+                    printf("numberis in fibonacci series");
+                    break;
+                }
+            }if(count==N)
+    printf("Not in fibonacci series");
+    }
+    
+}

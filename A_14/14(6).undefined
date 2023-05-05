@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+	void factorial(int n)
+	{
+	    if(n==0)
+	    printf("1");
+	    int fact=1;
+	    for(int i=1;i<=n;i++)
+            fact*= i;
+            printf("%d",fact);
+	}
+	factorial(5);
+	return 0;
+}

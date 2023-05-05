@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+	int x,y,p,H=1,i;
+	scanf("%d%d",&x,&y);
+	if(x>y)
+	p=y;
+	else
+	p=x;
+	for(i=2;i<=p;x>1||y>1)
+	{
+	    if(x%i==0&& y%i==0)
+	    {
+	        H=H*i;
+	        x=x/i;
+	        y=y/i;
+	    }
+	    else
+	     i++;
+	}
+	printf("%d",H);
+	return 0;
+}

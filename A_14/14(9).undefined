@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+	int digit(int x,int d)
+	{
+	    while(x)
+	    {
+    	    int y=x%10;
+    	    if(y==d)
+    	    return 1;
+    	    x=x/10;
+	    }
+	    return 0;
+	}
+	int k=digit(26388,5);
+	printf("%d",k);
+	return 0;
+}

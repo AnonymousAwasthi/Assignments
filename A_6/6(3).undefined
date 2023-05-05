@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+      int s1,s2,s3,s4,s5;
+      scanf("%d%d%d%d%d",&s1,&s2,&s3,&s4,&s5);
+      if(s1<33)
+           printf("student failed the examination");
+            else  if(s2<33)
+            printf("student failed the examination");
+            else  if(s3<33)
+            printf("student failed the examination");
+            else  if(s4<33)
+            printf("student failed the examination");
+            else  if(s5<33)
+            printf("student failed the examination");
+      else
+      printf("student passed the exam");
+      return 0;
+}

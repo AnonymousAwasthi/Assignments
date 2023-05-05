@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+	int var;
+	scanf("%d",&var);
+	switch(var)
+	{
+	    case 90 ... 100:
+	        printf("Grade A");
+	        break;
+	    case 80 ... 89:
+	        printf("Grade B");
+	        break;
+        case 70 ... 79:
+            printf("Grade C");
+            break;
+        case 60 ... 69:
+            printf("Grade D");
+        case 50 ... 59:
+            printf("Grade E");
+        case 0 ... 49:
+            printf("Grade F");
+        default:
+            printf("Invalid Marks");
+	}
+	return 0;
+}
